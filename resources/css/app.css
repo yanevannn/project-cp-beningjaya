@@ -9,3 +9,100 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+@keyframes gradient-shift {
+
+    0% { background-position: 0% 50%; }
+
+    50% { background-position: 100% 50%; }
+
+    100% { background-position: 0% 50%; }
+
+}
+
+
+
+.animated-gradient-sky {
+
+    /* background: linear-gradient(270deg, #38bdf8, #0ea5e9, #0284c7); /* Tailwind primary-400, 500, 600 */
+    background: linear-gradient(270deg, oklch(50% 0.134 242.749), #0ea5e9, oklch(58.8% 0.158 241.966)); /* Tailwind primary-400, 500, 600 */
+
+    background-size: 400% 400%; /* Make it larger to allow movement */
+
+    animation: gradient-shift 6s ease infinite; /* Adjust duration and easing as needed */
+
+}
+
+.swiper-pagination-bullet {
+    background-color: #cbd5e1 !important; /* light gray for non-active */
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+.swiper-pagination-bullet-active {
+    background-color: #ffffff !important; /* white for active */
+    opacity: 1;
+    transform: scale(1.2); /* Sedikit membesar saat aktif */
+}
+.swiper-pagination {
+    margin-top: 2.5rem !important; /* Tambah jarak di bawah carousel */
+    position: relative; 
+    bottom: auto !important; 
+}
+
+/* Memastikan tinggi kartu ulasan sama */
+.swiper-slide > li { 
+    height: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); 
+    transition: transform 0.3s ease-in-out; 
+}
+.swiper-slide > li:hover {
+    transform: translateY(-8px); 
+}
+.swiper-slide p.italic {
+     flex-grow: 1; 
+     line-height: 1.6; 
+}
+.text-yellow-300 i {
+    margin-right: 0.125rem; 
+}
+
+/* Hilangkan bullet default dari list item */
+ul.swiper-wrapper {
+    list-style: none; /* Menghilangkan bullet point default dari <ul> */
+    padding-left: 0; /* Menghilangkan padding default <ul> */
+}
+
+/* gallery */
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-100% - 2rem)); /* 2rem untuk gap-8 */
+    }
+  }
+  
+  @keyframes scroll-reverse {
+    0% {
+      transform: translateX(calc(-100% - 2rem));
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .animate-scroll {
+    animation: scroll 20s linear infinite;
+  }
+  
+  .animate-scroll-reverse {
+    animation: scroll-reverse 20s linear infinite;
+  }
+  
+  .home-gallery-row-top:hover, .home-gallery-row-bottom:hover {
+    animation-play-state: paused;
+  }
+
+  
