@@ -9,17 +9,15 @@
                     </a>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="{{ route('home') }}#home" class="text-gray-800 hover:text-sky-600 transition">Home</a>
-                    <a href="{{ route('home') }}#profile" class="text-gray-800 hover:text-sky-600 transition">About
-                        Us</a>
+                    <a href="{{ route('home') }}#home" class="text-gray-800 hover:text-sky-600 transition">Beranda</a>
+                    <a href="{{ route('home') }}#profile"
+                        class="text-gray-800 hover:text-sky-600 transition">Tentang</a>
                     <a href="{{ route('home') }}#services"
-                        class="text-gray-800 hover:text-sky-600 transition">Services</a>
-                    <a href="{{ route('home') }}#gallery"
-                        class="text-gray-800 hover:text-sky-600 transition">Galerry</a>
+                        class="text-gray-800 hover:text-sky-600 transition">Layanan</a>
+                    <a href="{{ route('home') }}#gallery" class="text-gray-800 hover:text-sky-600 transition">Galeri</a>
                     <a href="{{ route('home') }}#testimonials"
-                        class="text-gray-800 hover:text-sky-600 transition">Testimonials</a>
-                    <a href="{{ route('home') }}#contact"
-                        class="text-gray-800 hover:text-sky-600 transition">Contact</a>
+                        class="text-gray-800 hover:text-sky-600 transition">Testimoni</a>
+                    <a href="{{ route('home') }}#contact" class="text-gray-800 hover:text-sky-600 transition">Kontak</a>
                 </div>
                 <div class="md:hidden flex items-center">
                     <button class="outline-none mobile-menu-button">
@@ -34,18 +32,17 @@
         </div>
         <div class="hidden mobile-menu">
             <ul class="bg-white px-4 py-2 space-y-2">
-                <li><a href="{{ route('home') }}#home" class="block px-2 py-1 text-gray-800 hover:text-sky-600">Home</a>
+                <li><a href="{{ route('home') }}#home" class="block px-2 py-1 text-gray-800 hover:text-sky-600">Beranda</a>
                 </li>
-                <li><a href="{{ route('home') }}#profile" class="block px-2 py-1 text-gray-800 hover:text-sky-600">About
-                        Us</a></li>
+                <li><a href="{{ route('home') }}#profile" class="block px-2 py-1 text-gray-800 hover:text-sky-600">Tentang</a></li>
                 <li><a href="{{ route('home') }}#services"
-                        class="block px-2 py-1 text-gray-800 hover:text-sky-600">Services</a></li>
+                        class="block px-2 py-1 text-gray-800 hover:text-sky-600">Layanan</a></li>
                 <li><a href="{{ route('home') }}#gallery"
-                        class="block px-2 py-1 text-gray-800 hover:text-sky-600">Gallery</a></li>
+                        class="block px-2 py-1 text-gray-800 hover:text-sky-600">Galeri</a></li>
                 <li><a href="{{ route('home') }}#testimonials"
-                        class="block px-2 py-1 text-gray-800 hover:text-sky-600">Testimonials</a></li>
+                        class="block px-2 py-1 text-gray-800 hover:text-sky-600">Testimoni</a></li>
                 <li><a href="{{ route('home') }}#contact"
-                        class="block px-2 py-1 text-gray-800 hover:text-sky-600">Contact</a></li>
+                        class="block px-2 py-1 text-gray-800 hover:text-sky-600">Kontak</a></li>
             </ul>
         </div>
     </nav>

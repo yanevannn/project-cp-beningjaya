@@ -9,17 +9,15 @@
                     </a>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="{{ route('home') }}#home" class="text-gray-800 hover:text-sky-600 transition">Home</a>
-                    <a href="{{ route('home') }}#profile" class="text-gray-800 hover:text-sky-600 transition">About
-                        Us</a>
+                    <a href="{{ route('home') }}#home" class="text-gray-800 hover:text-sky-600 transition">Beranda</a>
+                    <a href="{{ route('home') }}#profile"
+                        class="text-gray-800 hover:text-sky-600 transition">Tentang</a>
                     <a href="{{ route('home') }}#services"
-                        class="text-gray-800 hover:text-sky-600 transition">Services</a>
-                    <a href="{{ route('home') }}#gallery"
-                        class="text-gray-800 hover:text-sky-600 transition">Galerry</a>
+                        class="text-gray-800 hover:text-sky-600 transition">Layanan</a>
+                    <a href="{{ route('home') }}#gallery" class="text-gray-800 hover:text-sky-600 transition">Galeri</a>
                     <a href="{{ route('home') }}#testimonials"
-                        class="text-gray-800 hover:text-sky-600 transition">Testimonials</a>
-                    <a href="{{ route('home') }}#contact"
-                        class="text-gray-800 hover:text-sky-600 transition">Contact</a>
+                        class="text-gray-800 hover:text-sky-600 transition">Testimoni</a>
+                    <a href="{{ route('home') }}#contact" class="text-gray-800 hover:text-sky-600 transition">Kontak</a>
                 </div>
                 <div class="md:hidden flex items-center">
                     <button class="outline-none mobile-menu-button">
@@ -34,18 +32,17 @@
         </div>
         <div class="hidden mobile-menu">
             <ul class="bg-white px-4 py-2 space-y-2">
-                <li><a href="{{ route('home') }}#home" class="block px-2 py-1 text-gray-800 hover:text-sky-600">Home</a>
+                <li><a href="{{ route('home') }}#home" class="block px-2 py-1 text-gray-800 hover:text-sky-600">Beranda</a>
                 </li>
-                <li><a href="{{ route('home') }}#profile" class="block px-2 py-1 text-gray-800 hover:text-sky-600">About
-                        Us</a></li>
+                <li><a href="{{ route('home') }}#profile" class="block px-2 py-1 text-gray-800 hover:text-sky-600">Tentang</a></li>
                 <li><a href="{{ route('home') }}#services"
-                        class="block px-2 py-1 text-gray-800 hover:text-sky-600">Services</a></li>
+                        class="block px-2 py-1 text-gray-800 hover:text-sky-600">Layanan</a></li>
                 <li><a href="{{ route('home') }}#gallery"
-                        class="block px-2 py-1 text-gray-800 hover:text-sky-600">Gallery</a></li>
+                        class="block px-2 py-1 text-gray-800 hover:text-sky-600">Galeri</a></li>
                 <li><a href="{{ route('home') }}#testimonials"
-                        class="block px-2 py-1 text-gray-800 hover:text-sky-600">Testimonials</a></li>
+                        class="block px-2 py-1 text-gray-800 hover:text-sky-600">Testimoni</a></li>
                 <li><a href="{{ route('home') }}#contact"
-                        class="block px-2 py-1 text-gray-800 hover:text-sky-600">Contact</a></li>
+                        class="block px-2 py-1 text-gray-800 hover:text-sky-600">Kontak</a></li>
             </ul>
         </div>
     </nav>
@@ -57,15 +54,13 @@
             <div class="grid md:grid-cols-2 gap-8 items-center">
                 <div class="space-y-6">
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-shadow" data-aos="fade-right">
-                        Professional
-                        Bore Well Drilling in Tabanan, Bali</h1>
-                    <p class="text-xl text-shadow" data-aos="fade-right" data-aos-delay="100">Trusted by hundreds of
-                        clients
-                        across Bali for reliable water solutions since 2005.</p>
+                        Jasa Pengeboran Sumur Profesional di Tabanan, Bali</h1>
+                    <p class="text-xl text-shadow" data-aos="fade-right" data-aos-delay="100">Dipercaya oleh ratusan
+                        klien di seluruh Bali untuk solusi air yang andal sejak tahun 2005.</p>
                     <div class="flex flex-wrap gap-4" data-aos="fade-right" data-aos-delay="200">
-                        <a href="#contact"
-                            class="bg-white text-sky-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">See
-                            our product</a>
+                        <a href="#services"
+                            class="bg-white text-sky-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">Lihat
+                            Produk Kami</a>
 
                     </div>
                 </div>
@@ -119,32 +114,27 @@
     <section id="profile" class="py-30 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16" data-aos="fade-down">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800">About Bening Jaya</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Tentang Bening Jaya</h2>
                 <div class="w-20 h-1 bg-sky-600 mx-auto mt-4"></div>
             </div>
             <div class="grid md:grid-cols-2 gap-12 items-center" data-aos="fade-up">
                 <div class="space-y-6">
-                    <h3 class="text-2xl font-bold text-gray-800">Our Story</h3>
-                    <p class="text-gray-600">Established in 2005, Bening Jaya has grown to become one of the most
-                        trusted
-                        bore well drilling companies in Tabanan, Bali. With a team of highly skilled professionals
-                        and
-                        state-of-the-art drilling equipment, we've successfully completed over 1000 drilling projects
-                        across
-                        Bali.</p>
-                    <p class="text-gray-600">Our mission is to provide reliable and sustainable water solutions to
-                        homes,
-                        businesses, and agricultural operations throughout Bali. We take pride in our commitment to
-                        quality,
-                        safety, and environmental responsibility.</p>
+                    <h3 class="text-2xl font-bold text-gray-800">Cerita Kami</h3>
+                    <p class="text-gray-600">Didirikan pada tahun 2005, Bening Jaya telah berkembang menjadi salah satu
+                        perusahaan pengeboran sumur terpercaya di Tabanan, Bali. Dengan tim profesional yang sangat
+                        terampil dan peralatan pengeboran canggih, kami telah berhasil menyelesaikan lebih dari 1000
+                        proyek pengeboran di seluruh Bali.</p>
+                    <p class="text-gray-600">Misi kami adalah menyediakan solusi air yang andal dan berkelanjutan untuk
+                        rumah tangga, bisnis, dan operasional pertanian di seluruh Bali. Kami bangga dengan komitmen
+                        kami terhadap kualitas, keselamatan, dan tanggung jawab terhadap lingkungan.</p>
                     <div class="grid grid-cols-2 gap-4">
                         <div class="bg-sky-50 p-4 rounded-lg">
                             <h4 class="font-bold text-sky-700 text-lg">20+</h4>
-                            <p class="text-gray-600 text-sm">Years Experience</p>
+                            <p class="text-gray-600 text-sm">Tahun Pengalaman</p>
                         </div>
                         <div class="bg-sky-50 p-4 rounded-lg">
-                            <h4 class="font-bold text-sky-600 text-lg">100+</h4>
-                            <p class="text-gray-600 text-sm">Happy Clients</p>
+                            <h4 class="font-bold text-sky-600 text-lg">150+</h4>
+                            <p class="text-gray-600 text-sm">Klien Puas</p>
                         </div>
                     </div>
                 </div>
@@ -164,10 +154,11 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Header Bagian -->
             <div class="text-center mb-16" data-aos="fade-down">
-                <h2 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight text-white">Our Featured Services
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight text-white">Layanan Unggulan Kami
                 </h2>
                 <div class="w-24 h-1.5 bg-white mx-auto rounded-full mt-4"></div>
-                <p class="mt-6 max-w-2xl mx-auto text-lg text-gray-200 opacity-95">Providing comprehensive solutions for your water needs.</p>
+                <p class="mt-6 max-w-2xl mx-auto text-lg text-gray-200 opacity-95">Menyediakan solusi menyeluruh untuk
+                    kebutuhan air Anda.</p>
             </div>
 
             <!-- Grid untuk Kartu Layanan -->
@@ -184,7 +175,7 @@
                                 <span class="flex items-center"><i class="fas fa-users text-base mr-1"></i>
                                     Profesional</span>
                                 <span class="flex items-center"><i class="fas fa-shield-alt text-base mr-1"></i>
-                                    Guaranteed</span>
+                                    Bergaransi</span>
                             </div>
                             <div class="flex star-rating mb-4 text-yellow-500 text-lg space-x-0.5">
                                 <!-- Added space-x-0.5 for star spacing -->
@@ -195,7 +186,7 @@
                             <a href="https://wa.me/628990477851?text={{ urlencode('Halo Tim Bening Jaya, saya tertarik dengan produk "' . $product->name . '". Mohon informasinya lebih lanjut. Terima kasih!') }}"
                                 target="_blank"
                                 class="text-center bg-[#5cb85c] text-white font-semibold py-3 px-8 rounded-lg shadow-md hover:shadow-lg w-full transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:bg-[#4cae4c]">
-                                Contact Now
+                                Hubungi Kami
                             </a>
                         </div>
                     </div>
@@ -209,10 +200,10 @@
     <section id="gallery" class="py-24">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16" data-aos="fade-down">
             <div class="text-center">
-                <h2 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">Our Project Gallery</h2>
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">Galeri Proyek Kami</h2>
                 <div class="w-24 h-1.5 bg-sky-700 mx-auto rounded-full mt-4"></div>
-                <p class="mt-6 max-w-2xl mx-auto text-lg text-gray-600 opacity-95">Explore some of our drilling and
-                    installation projects.</p>
+                <p class="mt-6 max-w-2xl mx-auto text-lg text-gray-600 opacity-95">Lihat beberapa proyek pengeboran dan
+                    instalasi yang telah kami kerjakan.</p>
             </div>
         </div>
 
@@ -251,11 +242,10 @@
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16 px-4 sm:px-6 lg:px-8" data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom">
-                <h2 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">What Our Clients Say </h2>
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">Apa Kata Klien Kami</h2>
                 <div class="w-24 h-1.5 bg-white mx-auto rounded-full mt-4"></div>
-                <p class="mt-6 max-w-2xl mx-auto text-lg text-gray-200 opacity-95">Hear from satisfied customers
-                    who
-                    trusted Bening Jaya for their water solutions.</p>
+                <p class="mt-6 max-w-2xl mx-auto text-lg text-gray-200 opacity-95">Dengarkan pengalaman pelanggan yang
+                    puas setelah mempercayakan solusi air mereka kepada Bening Jaya.</p>
             </div>
 
             <div class="overflow-hidden">
@@ -263,7 +253,7 @@
                     <ul class="swiper-wrapper">
                         @if ($reviews->isEmpty())
                             <div class="bg-white bg-opacity-10 rounded-2xl p-7 backdrop-blur-lg mx-auto">
-                                <p class="text-gray-500">No reviews available at the moment.</p>
+                                <p class="text-gray-500">Belum ada review saat ini.</p>
                             </div>
                         @endif
                         @foreach ($reviews as $review)
@@ -303,10 +293,9 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-2 gap-12" data-aos="fade-down">
                 <div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Get In Touch</h2>
-                    <p class="text-gray-600 mb-8">Ready to discuss your bore well project? Contact us today for a
-                        free
-                        consultation and quote.</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Hubungi Kami</h2>
+                    <p class="text-gray-600 mb-8">Siap membahas proyek pengeboran sumur Anda? Hubungi kami hari ini
+                        untuk konsultasi dan penawaran gratis.</p>
                     <div class="space-y-6">
                         <div class="flex items-start space-x-4">
                             <div
@@ -314,8 +303,8 @@
                                 <i class="fas fa-map-marker-alt"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-gray-800">Address</h4>
-                                <p class="text-gray-600">Jl. Rambutan No.30, Tabanan</p>
+                                <h4 class="font-bold text-gray-800">Alamat</h4>
+                                <p class="text-gray-600">Jl. Rambutan No.30, Tabanan.</p>
                             </div>
                         </div>
                         <div class="flex items-start space-x-4">
@@ -324,7 +313,7 @@
                                 <i class="fas fa-phone"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-gray-800">Phone</h4>
+                                <h4 class="font-bold text-gray-800">Telepon</h4>
                                 <p class="text-gray-600">+62 899-0477-851</p>
                             </div>
                         </div>
@@ -344,9 +333,9 @@
                                 <i class="fas fa-clock"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-gray-800">Working Hours</h4>
-                                <p class="text-gray-600">Saturday: 8:00 AM - 1:00 PM</p>
-                                <p class="text-gray-600">Sunday: 8:00 AM - 1:00 PM</p>
+                                <h4 class="font-bold text-gray-800">Jam Operasional</h4>
+                                <p class="text-gray-600">Senin - Sabtu: 08:00 - 16:00</p>
+                                <p class="text-gray-600">Minggu: 08:00 - 13:00</p>
                             </div>
                         </div>
                     </div>
@@ -370,35 +359,34 @@
                 </div>
                 <div>
                     <div class="bg-sky-50 p-8 rounded-xl">
-                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Send Us a Message</h3>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Kirim Pesan kepada Kami</h3>
                         <form class="space-y-4" onsubmit="sendToWhatsApp(event)">
                             <div>
-                                <label for="name" class="block text-gray-700 font-medium mb-1">Full
-                                    Name</label>
+                                <label for="name" class="block text-gray-700 font-medium mb-1">Nama
+                                    Lengkap</label>
                                 <input type="text" id="name"
                                     class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent"
-                                    placeholder="Your name">
+                                    placeholder="Nama Anda" required>
                             </div>
                             <div>
-                                <label for="service" class="block text-gray-700 font-medium mb-1">Service
-                                    Needed</label>
+                                <label for="service" class="block text-gray-700 font-medium mb-1">Layanan</label>
                                 <select id="service"
                                     class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent">
-                                    <option value="">Select a service</option>
+                                    <option value="">Pilih layanan</option>
                                     @foreach ($products as $product)
                                         <option value="{{ $product->name }}">{{ $product->name }}</option>
                                     @endforeach
                                 </select>
                             </div>
                             <div>
-                                <label for="message" class="block text-gray-700 font-medium mb-1">Message</label>
+                                <label for="message" class="block text-gray-700 font-medium mb-1">Pesan</label>
                                 <textarea id="message" rows="4"
                                     class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent"
-                                    placeholder="Tell us about your project"></textarea>
+                                    placeholder="Ceritakan kepada kami tentang rencana proyek Anda"></textarea>
                             </div>
                             <button type="submit"
-                                class="w-full bg-sky-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-sky-700 transition duration-300">Send
-                                Message</button>
+                                class="w-full bg-sky-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-sky-700 transition duration-300">Kirim
+                                Pesan</button>
                         </form>
                     </div>
                 </div>
@@ -424,10 +412,8 @@
                 class="flex flex-col md:flex-row justify-between items-start md:items-center space-y-6 md:space-y-0 md:space-x-8">
                 <div class="w-full md:w-1/3">
                     <img src="/assets/img/logo2.png" class="-ml-5" alt="" width="200">
-
-
-                    <p class="text-gray-400 text-balance">Professional bore well drilling services in Tabanan, Bali
-                        since 2005. Providing reliable water solutions for residential and commercial properties.
+                    <p class="text-gray-400 text-balance">Layanan pengeboran sumur profesional di Tabanan, Bali sejak
+                        tahun 2005. Menyediakan solusi air yang andal untuk properti hunian dan komersial.
                     </p>
                 </div>
                 <div
@@ -435,15 +421,13 @@
                     <div>
                         <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
                         <ul class="space-y-2">
-                            <li><a href="#home" class="text-gray-400 hover:text-sky-400 transition">Home</a>
+                            <li><a href="#home" class="text-gray-400 hover:text-sky-400 transition">Beranda</a>
                             </li>
-                            <li><a href="#profile" class="text-gray-400 hover:text-sky-400 transition">Company
-                                    Profile</a></li>
-                            <li><a href="#services" class="text-gray-400 hover:text-sky-400 transition">Services</a>
+                            <li><a href="#profile" class="text-gray-400 hover:text-sky-400 transition">Tentang</a></li>
+                            <li><a href="#services" class="text-gray-400 hover:text-sky-400 transition">Layanan</a></li>
+                            <li><a href="#gallery" class="text-gray-400 hover:text-sky-400 transition">Galeri</a>
                             </li>
-                            <li><a href="#projects" class="text-gray-400 hover:text-sky-400 transition">Projects</a>
-                            </li>
-                            <li><a href="#contact" class="text-gray-400 hover:text-sky-400 transition">Contact</a>
+                            <li><a href="#contact" class="text-gray-400 hover:text-sky-400 transition">Kontak</a>
                             </li>
                         </ul>
                     </div>
@@ -470,14 +454,14 @@
             const url = `https://wa.me/${targetNumber}?text=${encodeURIComponent(
     `Halo tim *Bening Jaya*!
 
-        Saya ingin berkonsultasi mengenai layanan yang tersedia. Berikut data saya:
+                    Saya ingin berkonsultasi mengenai layanan yang tersedia. Berikut data saya:
 
-        Nama: ${name}
-        Layanan yang diminati: ${service}
-        Pesan:
-        ${message}
+                    Nama: ${name}
+                    Layanan yang diminati: ${service}
+                    Pesan:
+                    ${message}
 
-        Mohon dibantu ya. Terima kasih sebelumnya!`)}`;
+                    Mohon dibantu ya. Terima kasih sebelumnya!`)}`;
             window.open(url, '_blank');
         }
     </script>
