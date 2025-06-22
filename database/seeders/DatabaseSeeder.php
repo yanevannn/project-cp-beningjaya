@@ -17,46 +17,46 @@ class DatabaseSeeder extends Seeder
     {
         User::factory()->create([
             'name' => 'Admin User',
-            'email' => 'admin@mail.com',
+            'email' => 'beningjayasumurbor@gmail.com',
             'password' => bcrypt('admin'), // Hash the password
         ]);
 
         DB::table('products')->insert([
             [
-                'name' => 'Jasa Sumur Bor Dalam & Dangkal',
+                'name' => 'Deep & Shallow Bore Well Services',
                 'photo' => 'product1.jpg',
-                'description' => 'Survei lokasi, pengeboran, pemasangan pipa, dan instalasi pompa air untuk memompa air ke permukaan. Jasa pembuatan sumur bor Dangkal atau Dalam sesuai kebutuhan Anda dan keluarga',
+                'description' => 'Site survey, drilling, pipe installation, and water pump setup to draw water to the surface. We offer shallow or deep bore well construction services tailored to your household needs.',
             ],
             [
-                'name' => 'Jasa Service Pompa Air & Sumur',
+                'name' => 'Water Pump & Well Repair Services',
                 'photo' => 'product2.jpg',
-                'description' => 'Ada beberapa faktor kerusakan seperti: Kerusakan Motor, Korosi, Kerusakan pada Seal, Penyumbatan, Tekanan yang Tidak Stabil, Masalah Listrik atau Kontrol, Overheating dll.',
+                'description' => 'Common issues include: motor failure, corrosion, seal damage, clogs, unstable pressure, electrical/control problems, overheating, and more.',
             ],
             [
-                'name' => 'Jasa Perawatan Sumur',
+                'name' => 'Well Maintenance Services',
                 'photo' => 'product3.jpg',
-                'description' => 'Jasa perawatan sumur meliputi: Pemeriksaan Rutin, Pembersihan Sumur, Penggantian Filter/Saringan, Pemeliharaan Pompa, Pengukuran Tingkat Air, Desinfeksi, Reparasi dan Pemeliharaan.',
+                'description' => 'Well maintenance includes: routine inspection, well cleaning, filter replacement, pump maintenance, water level checks, disinfection, and repair work.',
             ]
         ]);
 
         DB::table('testimonis')->insert([
             [
-                'name' => 'Andi Prasetyo',
-                'photo' => 'images/testimonials/andi.jpg',
-                'review' => 'Pelayanan sangat baik dan cepat. Sangat direkomendasikan!',
+                'name' => 'Made Budi',
+                'photo' => 'images/testimonials/made.jpg',
+                'review' => 'Saya sangat puas dengan pelayanan pengeboran sumur dari CV Bening Jaya. Timnya datang tepat waktu dan sangat profesional. Mereka menjelaskan setiap prosesnya dengan jelas dan bekerja dengan rapi. Sekarang air di rumah saya lancar dan jernih. Terima kasih!	',
                 'star' => 5,
             ],
             [
-                'name' => 'Siti Nurhaliza',
-                'photo' => 'images/testimonials/siti.jpg',
-                'review' => 'Produk berkualitas tinggi, saya sangat puas!',
-                'star' => 4,
+                'name' => 'Komang Jaya',
+                'photo' => 'images/testimonials/komang.jpg',
+                'review' => 'Bukan cuma bor sumur, mereka juga bantu pasang pompa dan pipa instalasi. Setelah beberapa minggu, saya tanya soal tekanan air dan mereka langsung datang bantu cek ulang tanpa biaya tambahan. Pelayanannya luar biasa.',
+                'star' => 5,
             ],
             [
-                'name' => 'Budi Santoso',
-                'photo' => 'images/testimonials/budi.jpg',
-                'review' => 'Pelayanan oke, cuma pengiriman agak lama.',
-                'star' => 3,
+                'name' => 'Mita',
+                'photo' => 'images/testimonials/mita.jpg',
+                'review' => 'Pengerjaan sumur bor di rumah saya hanya memakan waktu 2 hari. Prosesnya cepat tapi tetap teliti. Hasil air bersih dan debitnya kencang. Setelah selesai, area kerja dibersihkan kembali. Sangat direkomendasikan!',
+                'star' => 5,
             ],
         ]);
     }

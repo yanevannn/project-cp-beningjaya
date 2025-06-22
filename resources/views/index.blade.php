@@ -61,7 +61,7 @@
                         Bore Well Drilling in Tabanan, Bali</h1>
                     <p class="text-xl text-shadow" data-aos="fade-right" data-aos-delay="100">Trusted by hundreds of
                         clients
-                        across Bali for reliable water solutions since 2010.</p>
+                        across Bali for reliable water solutions since 2005.</p>
                     <div class="flex flex-wrap gap-4" data-aos="fade-right" data-aos-delay="200">
                         <a href="#contact"
                             class="bg-white text-sky-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">See
@@ -73,7 +73,7 @@
                     <div class="relative w-full h-64 md:h-80 lg:h-96 bg-black rounded-xl overflow-hidden">
                         <!-- Thumbnail YouTube -->
                         <!-- URL thumbnail YouTube diambil dari video ID: 3fGUwWHodOY -->
-                        <img src="https://img.youtube.com/vi/3fGUwWHodOY/hqdefault.jpg" alt="YouTube Video Thumbnail"
+                        <img src="" alt="YouTube Video Thumbnail"
                             class="w-full h-full object-cover cursor-pointer" id="youtubeThumbnail" />
 
                         <!-- Overlay dengan tombol play -->
@@ -125,11 +125,11 @@
             <div class="grid md:grid-cols-2 gap-12 items-center" data-aos="fade-up">
                 <div class="space-y-6">
                     <h3 class="text-2xl font-bold text-gray-800">Our Story</h3>
-                    <p class="text-gray-600">Established in 2010, Bening Jaya has grown to become one of the most
+                    <p class="text-gray-600">Established in 2005, Bening Jaya has grown to become one of the most
                         trusted
                         bore well drilling companies in Tabanan, Bali. With a team of highly skilled professionals
                         and
-                        state-of-the-art drilling equipment, we've successfully completed over 500 drilling projects
+                        state-of-the-art drilling equipment, we've successfully completed over 1000 drilling projects
                         across
                         Bali.</p>
                     <p class="text-gray-600">Our mission is to provide reliable and sustainable water solutions to
@@ -139,11 +139,11 @@
                         safety, and environmental responsibility.</p>
                     <div class="grid grid-cols-2 gap-4">
                         <div class="bg-sky-50 p-4 rounded-lg">
-                            <h4 class="font-bold text-sky-700 text-lg">12+</h4>
+                            <h4 class="font-bold text-sky-700 text-lg">20+</h4>
                             <p class="text-gray-600 text-sm">Years Experience</p>
                         </div>
                         <div class="bg-sky-50 p-4 rounded-lg">
-                            <h4 class="font-bold text-sky-600 text-lg">50+</h4>
+                            <h4 class="font-bold text-sky-600 text-lg">100+</h4>
                             <p class="text-gray-600 text-sm">Happy Clients</p>
                         </div>
                     </div>
@@ -164,12 +164,10 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Header Bagian -->
             <div class="text-center mb-16" data-aos="fade-down">
-                <h2 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight text-white">Layanan Unggulan Kami
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight text-white">Our Featured Services
                 </h2>
                 <div class="w-24 h-1.5 bg-white mx-auto rounded-full mt-4"></div>
-                <p class="mt-6 max-w-2xl mx-auto text-lg text-gray-200 opacity-95">Menyediakan solusi komprehensif
-                    untuk
-                    kebutuhan air Anda.</p>
+                <p class="mt-6 max-w-2xl mx-auto text-lg text-gray-200 opacity-95">Providing comprehensive solutions for your water needs.</p>
             </div>
 
             <!-- Grid untuk Kartu Layanan -->
@@ -183,12 +181,10 @@
                         <div class="p-6 flex flex-col items-start">
                             <h3 class="text-xl font-bold mb-3 text-gray-900">{{ $product->name }}</h3>
                             <div class="flex items-center space-x-4 mb-4 text-gray-600 text-sm">
-                                <span class="flex items-center"><i class="fas fa-wifi text-base mr-1"></i>
-                                    300+</span>
                                 <span class="flex items-center"><i class="fas fa-users text-base mr-1"></i>
                                     Profesional</span>
                                 <span class="flex items-center"><i class="fas fa-shield-alt text-base mr-1"></i>
-                                    Bergaransi</span>
+                                    Guaranteed</span>
                             </div>
                             <div class="flex star-rating mb-4 text-yellow-500 text-lg space-x-0.5">
                                 <!-- Added space-x-0.5 for star spacing -->
@@ -196,9 +192,11 @@
                                     class="fas fa-star"></i><i class="fas fa-star"></i>
                             </div>
                             <p class="text-gray-700 mb-6 flex-grow text-sm">{{ $product->description }}</p>
-                            <button
-                                class="bg-[#5cb85c] text-white font-semibold py-3 px-8 rounded-lg shadow-md hover:shadow-lg w-full transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:bg-[#4cae4c]">Panggil
-                                Sekarang</button>
+                            <a href="https://wa.me/628990477851?text={{ urlencode('Halo Tim Bening Jaya, saya tertarik dengan produk "' . $product->name . '". Mohon informasinya lebih lanjut. Terima kasih!') }}"
+                                target="_blank"
+                                class="text-center bg-[#5cb85c] text-white font-semibold py-3 px-8 rounded-lg shadow-md hover:shadow-lg w-full transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:bg-[#4cae4c]">
+                                Contact Now
+                            </a>
                         </div>
                     </div>
                 @endforeach
@@ -317,7 +315,7 @@
                             </div>
                             <div>
                                 <h4 class="font-bold text-gray-800">Address</h4>
-                                <p class="text-gray-600">Jl. Raya Denpasar, Tabanan, Bali 82121</p>
+                                <p class="text-gray-600">Jl. Rambutan No.30, Tabanan</p>
                             </div>
                         </div>
                         <div class="flex items-start space-x-4">
@@ -347,24 +345,24 @@
                             </div>
                             <div>
                                 <h4 class="font-bold text-gray-800">Working Hours</h4>
-                                <p class="text-gray-600">Monday - Friday: 8:00 AM - 5:00 PM</p>
                                 <p class="text-gray-600">Saturday: 8:00 AM - 1:00 PM</p>
+                                <p class="text-gray-600">Sunday: 8:00 AM - 1:00 PM</p>
                             </div>
                         </div>
                     </div>
                     <div class="mt-8">
                         <h4 class="font-bold text-gray-800 mb-4">Follow Us</h4>
                         <div class="flex space-x-4">
-                            <a href="#"
+                            <a href="https://web.facebook.com/p/beningjaya.sumurbor" target="_blank"
                                 class="w-10 h-10 rounded-full bg-sky-100 text-sky-600 flex items-center justify-center hover:bg-sky-200 transition"><i
                                     class="fab fa-facebook-f"></i></a>
-                            <a href="#"
+                            <a href="https://www.instagram.com/beningjaya_sumurbor" target="_blank"
                                 class="w-10 h-10 rounded-full bg-sky-100 text-sky-600 flex items-center justify-center hover:bg-sky-200 transition"><i
                                     class="fab fa-instagram"></i></a>
-                            <a href="#"
+                            <a href="https://wa.me/628990477851" target="_blank"
                                 class="w-10 h-10 rounded-full bg-sky-100 text-sky-600 flex items-center justify-center hover:bg-sky-200 transition"><i
                                     class="fab fa-whatsapp"></i></a>
-                            <a href="#"
+                            <a href="https://www.youtube.com/@BeningJayaSumurbor" target="_blank"
                                 class="w-10 h-10 rounded-full bg-sky-100 text-sky-600 flex items-center justify-center hover:bg-sky-200 transition"><i
                                     class="fab fa-youtube"></i></a>
                         </div>
@@ -411,7 +409,8 @@
 
     <!-- Floating WhatsApp Button -->
     <div class="fixed bottom-6 right-6 z-50" data-aos="zoom-in" data-aos-delay="1000">
-        <a href="https://wa.me/628990477851?text=Saya%20ingin%20berkonsultasi%20mengenai%20layanan%20yang%20tersedia.%20Mohon%20bantuannya%20untuk%20penjelasan%20lebih%20lanjut." target="_blank"
+        <a href="https://wa.me/628990477851?text=Saya%20ingin%20berkonsultasi%20mengenai%20layanan%20yang%20tersedia.%20Mohon%20bantuannya%20untuk%20penjelasan%20lebih%20lanjut."
+            target="_blank"
             class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition transform hover:scale-110">
             <i class="fab fa-whatsapp text-white text-3xl"></i>
         </a>
@@ -428,7 +427,7 @@
 
 
                     <p class="text-gray-400 text-balance">Professional bore well drilling services in Tabanan, Bali
-                        since 2010. Providing reliable water solutions for residential and commercial properties.
+                        since 2005. Providing reliable water solutions for residential and commercial properties.
                     </p>
                 </div>
                 <div
@@ -471,14 +470,14 @@
             const url = `https://wa.me/${targetNumber}?text=${encodeURIComponent(
     `Halo tim *Bening Jaya*!
 
-    Saya ingin berkonsultasi mengenai layanan yang tersedia. Berikut data saya:
+        Saya ingin berkonsultasi mengenai layanan yang tersedia. Berikut data saya:
 
-    Nama: ${name}
-    Layanan yang diminati: ${service}
-    Pesan:
-    ${message}
+        Nama: ${name}
+        Layanan yang diminati: ${service}
+        Pesan:
+        ${message}
 
-    Mohon dibantu ya. Terima kasih sebelumnya!`)}`;
+        Mohon dibantu ya. Terima kasih sebelumnya!`)}`;
             window.open(url, '_blank');
         }
     </script>

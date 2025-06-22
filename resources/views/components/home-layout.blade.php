@@ -37,8 +37,8 @@
             const youtubePlayer = document.getElementById('youtubePlayer');
     
             // ID video YouTube yang akan diputar
-            // Ini adalah ID dari URL: https://youtu.be/3fGUwWHodOY?si=dRERNaSi2Sg1GSl1
-            const videoId = '3fGUwWHodOY'; 
+            // Ini adalah ID dari URL: https://youtu.be/qOCQwtW0h_k?si=dRERNaSi2Sg1GSl1
+            const videoId = 'qOCQwtW0h_k'; 
             
             // Memastikan URL thumbnail sesuai dengan video ID
             const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
