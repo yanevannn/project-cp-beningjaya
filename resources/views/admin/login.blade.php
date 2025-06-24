@@ -57,8 +57,8 @@
                             <img src="../assets/img/logobj.png" alt="Logo" width="170" class="mb-3">
                         </div>
                         <!-- /Logo -->
-                        <h4 class="mb-2">👋 Welcome</h4>
-                        <p class="mb-4">Please sign-in to your account and start the adventure</p>
+                        <h4 class="mb-2">👋 Selamat Datang</h4>
+                        <p class="mb-4">Silahkan login untuk mengakses sistem</p>
                         @if ($errors->any())
                             <div class="alert alert-danger my-2" role="alert">
                                 {{ $errors->first() }} 

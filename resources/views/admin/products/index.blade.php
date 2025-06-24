@@ -1,7 +1,7 @@
 
 
     <x-main-layout>
-        <h5 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Dashboard /</span> Products</h5>
+        <h5 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Dashboard /</span> Layanan</h5>
       
         <div class="row">
             <div class="col-md-12">
@@ -11,25 +11,25 @@
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
                 @endif
-                <a class="btn btn-success active mb-2" href="{{ route('products.create') }}">Add Data</a>
+                <a class="btn btn-success active mb-2" href="{{ route('products.create') }}">Tambah Data</a>
                 </ul>
                 <div class="card mb-2">
-                    <h5 class="card-header">Products Table</h5>
+                    <h5 class="card-header">Tabel Layanan</h5>
                     <div class="table-responsive text-nowrap">
                         <table class="table table-borderless" >
                             <thead>
                                 <tr>
                                     <th class="text-center">No</th>
-                                    <th>Product Name</th>
-                                    <th >Image</th>
-                                    <th>Desciption</th>
-                                    <th>Actions</th>
+                                    <th>Nama Layanan</th>
+                                    <th>Gambar</th>
+                                    <th>Deksripsi</th>
+                                    <th>Aksi</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @if (!$data->count())
                                     <tr>
-                                        <td colspan="10" class="text-center">No data available</td>
+                                        <td colspan="10" class="text-center">Tidak ada data saat ini.</td>
                                     </tr>
                                 @endif
                                 @foreach ($data as $item)
@@ -65,20 +65,20 @@
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="confirmDeleteModalLabel-{{ $item->id }}">Delete Confirmation
+                            <h5 class="modal-title" id="confirmDeleteModalLabel-{{ $item->id }}">Konfirmasi Penghapusan Layanan
                             </h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <p>Are you sure you want to delete this product: **<span>{{ $item->name }}</span>**?</p>
-                            <p class="text-danger">This action cannot be undone.</p>
+                            <p>Apakah kamu yakin menghapus layanan: **<span>{{ $item->name }}</span>**?</p>
+                            <p class="text-danger">Setelah dilakukan data tidak bisa dikembalikan.</p>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
                             <form method="POST" action="{{ route('products.delete', $item->id) }}"> {{-- Action langsung diisi --}}
                                 @csrf
                                 @method('DELETE')
-                                <button type="submit" class="btn btn-danger">Yes, Delete!</button>
+                                <button type="submit" class="btn btn-danger">Iya, Hapus!</button>
                             </form>
                         </div>
                     </div>

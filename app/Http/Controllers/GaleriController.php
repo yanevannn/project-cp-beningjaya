@@ -29,7 +29,7 @@ class GaleriController extends Controller
 
         Gallery::create(['photo' => $photoPath]);
 
-        return redirect()->route('gallery.index')->with('success', 'Data successfully added');
+        return redirect()->route('gallery.index')->with('success', 'Data berhasil ditambahkan');
     }
 
     public function destroy($id)
@@ -39,6 +39,6 @@ class GaleriController extends Controller
             Storage::disk('public')->delete($gallery->photo);
         }
         $gallery->delete();
-        return redirect()->route('gallery.index')->with('success', 'Data successfully deleted');
+        return redirect()->route('gallery.index')->with('success', 'Data berhasil dihapus');
     }
 }

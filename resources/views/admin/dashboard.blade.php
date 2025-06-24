@@ -93,7 +93,7 @@
                             <i class="bx bx-dots-vertical-rounded"></i>
                           </button>
                           <div class="dropdown-menu dropdown-menu-end">
-                            <a class="dropdown-item" href="{{ route('testimoni.index') }}">View More</a>
+                            <a class="dropdown-item" href="{{ route('testimoni.index') }}">Lihat</a>
                           </div>
                         </div>
                       </div>
@@ -116,11 +116,11 @@
                             <i class="bx bx-dots-vertical-rounded"></i>
                           </button>
                           <div class="dropdown-menu dropdown-menu-end">
-                            <a class="dropdown-item" href="{{ route('products.index') }}">View More</a>
+                            <a class="dropdown-item" href="{{ route('products.index') }}">Lihat</a>
                           </div>
                         </div>
                       </div>
-                      <span class="fw-semibold d-block mb-1">Total Product</span>
+                      <span class="fw-semibold d-block mb-1">Total Layanan</span>
                       <h3 class="card-title mb-2">{{ $totalProduct }}</h3>
                     </div>
                   </div>
@@ -139,11 +139,11 @@
                             <i class="bx bx-dots-vertical-rounded"></i>
                           </button>
                           <div class="dropdown-menu dropdown-menu-end">
-                            <a class="dropdown-item" href="{{ route('gallery.index') }}">View More</a>
+                            <a class="dropdown-item" href="{{ route('gallery.index') }}">Lihat</a>
                           </div>
                         </div>
                       </div>
-                      <span class="fw-semibold d-block mb-1">Total Gallery</span>
+                      <span class="fw-semibold d-block mb-1">Total Galeri</span>
                       <h3 class="card-title mb-2">{{ $totalGallery }}</h3>
                     </div>
                   </div>

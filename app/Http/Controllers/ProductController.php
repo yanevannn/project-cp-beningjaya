@@ -39,7 +39,7 @@ class ProductController extends Controller
         ];
         Product::create($data);
 
-        return redirect()->route('products.index')->with('success', 'Product created successfully.');
+        return redirect()->route('products.index')->with('success', 'Layanan berhasil ditambahkan.');
     }
 
     public function edit($id)
@@ -72,7 +72,7 @@ class ProductController extends Controller
 
         $product->update($data);
 
-        return redirect()->route('products.index')->with('success', 'Product updated successfully.');
+        return redirect()->route('products.index')->with('success', 'Layanan berhasil diperbarui.');
     }
 
     public function destroy($id)
@@ -82,6 +82,6 @@ class ProductController extends Controller
             Storage::disk('public')->delete($product->photo);
         }
         $product->delete();
-        return redirect()->route('products.index')->with('success', 'Product deleted successfully.');
+        return redirect()->route('products.index')->with('success', 'Layanan berhasil dihapus.');
     }
 }

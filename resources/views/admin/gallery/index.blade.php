@@ -1,5 +1,5 @@
 <x-main-layout>
-    <h5 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Dashboard /</span> Gallery</h5>
+    <h5 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Dashboard /</span> Galeri</h5>
     <div class="row">
         <div class="col-md-12">
             @if (session('success'))
@@ -20,7 +20,7 @@
                     <div class="card mb-2">
                         <div class="text-center p-4">
                             <i class="bx bx-image" style="font-size: 50px;"></i>
-                            <h5 class="mt-2">No Images Available</h5>
+                            <h5 class="mt-2">Tidak ada gambar saat ini.</h5>
                         </div>
                     </div>
                 @endif
@@ -58,18 +58,18 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="uploadPhotoModalTitle">Upload Product Photo</h5>
+                    <h5 class="modal-title" id="uploadPhotoModalTitle">Upload Gambar</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <form action="{{ route('gallery.store') }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="modal-body">
                         <div class="mb-3">
-                            <label for="productPhoto" class="form-label">Choose Photo</label>
+                            <label for="productPhoto" class="form-label">Pilih Gambar</label>
                             <input type="file" id="productPhoto" name="photo" class="form-control"
                                 accept="image/*">
                             <div class="form-text">
-                                Max file size: 2MB. Allowed formats: JPG, PNG, GIF.
+                                Ukuran file maksimum: 2MB. Format yang diizinkan: JPG, PNG, GIF.
                             </div>
                             @error('photo')
                                 <div class="text-danger mt-1">{{ $message }}</div>
@@ -78,9 +78,9 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
-                            Close
+                            Tutup
                         </button>
-                        <button type="submit" class="btn btn-primary">Upload Photo</button>
+                        <button type="submit" class="btn btn-primary">Upload Gambar</button>
                     </div>
                 </form>
             </div>
@@ -92,20 +92,21 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="confirmDeleteModalLabel-{{ $item->id }}">Delete Confirmation
+                        <h5 class="modal-title" id="confirmDeleteModalLabel-{{ $item->id }}">
+                            Konfirmasi Penghapusan Gambar
                         </h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <p>Are you sure you want to delete this photo?</p>
-                        <p class="text-danger">This action cannot be undone.</p>
+                        <p>Apakah kamu yakin untuk menghapus gambar ini?</p>
+                        <p class="text-danger">Setelah dihapus data tidak dapat dikembalikan</p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
                         <form method="POST" action="{{ route('gallery.delete', $item->id) }}"> {{-- Action langsung diisi --}}
                             @csrf
                             @method('DELETE')
-                            <button type="submit" class="btn btn-danger">Yes, Delete!</button>
+                            <button type="submit" class="btn btn-danger">Ya, Hapus!</button>
                         </form>
                     </div>
                 </div>
@@ -127,7 +128,7 @@
                             class="img-fluid" style="max-height: 80vh;">
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
                     </div>
                 </div>
             </div>

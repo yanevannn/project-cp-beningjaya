@@ -11,23 +11,23 @@
             @endif
             </ul>
             <div class="card mb-2">
-                <h5 class="card-header">Testimoni Table</h5>
+                <h5 class="card-header">Tabel Testimoni</h5>
                 <div class="table-responsive text-nowrap">
                     <table class="table table-borderless">
                         <thead>
                             <tr>
                                 <th class="text-center">No</th>
-                                <th>Name</th>
+                                <th>Nama</th>
                                 <th>Rating</th>
-                                <th>Message</th>
+                                <th>Pesan</th>
                                 <th>Status</th>
-                                <th class="text-center">Actions</th>
+                                <th class="text-center">Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
                             @if (!$data->count())
                                 <tr>
-                                    <td colspan="10" class="text-center">No data available</td>
+                                    <td colspan="10" class="text-center">Tidak ada data saat ini.</td>
                                 </tr>
                             @endif
                             @foreach ($data as $item)
@@ -104,22 +104,22 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="confirmDeleteModalLabel-{{ $item->id }}">Delete Confirmation
+                        <h5 class="modal-title" id="confirmDeleteModalLabel-{{ $item->id }}">Konfirmasi Penghapusan Testimoni
                         </h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         {{-- Pastikan $item->name sesuai dengan kolom nama di tabel testimoni Anda --}}
-                        <p>Are you sure you want to delete this testimoni: **<span>{{ $item->name }}</span>**?</p>
-                        <p class="text-danger">This action cannot be undone.</p>
+                        <p>Apakah kamu ingin menghapus testimoni dari: **<span>{{ $item->name }}</span>**?</p>
+                        <p class="text-danger">Setelah dihapus data tidak dapat dikembalikan.</p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
                         {{-- Route telah diubah ke 'testimoni.delete' --}}
                         <form method="POST" action="{{ route('testimoni.delete', $item->id) }}">
                             @csrf
                             @method('DELETE')
-                            <button type="submit" class="btn btn-danger">Yes, Delete!</button>
+                            <button type="submit" class="btn btn-danger">Ya, Hapus!</button>
                         </form>
                     </div>
                 </div>

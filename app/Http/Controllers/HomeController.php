@@ -57,6 +57,6 @@ class HomeController extends Controller
             'review' => $request->review,
         ]);   
 
-        return redirect()->route('review')->with('success', 'Thank you for your review!');
+        return redirect()->route('review')->with('success', 'Terimakasi atas review anda!');
     }
 }

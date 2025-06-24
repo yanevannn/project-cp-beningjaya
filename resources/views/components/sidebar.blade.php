@@ -27,7 +27,7 @@
         <li class="menu-item {{  Request::is("dashboard/products*") ? 'active' : '' }}">
             <a href="{{ route('products.index') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-package"></i>
-                <div>Product</div>
+                <div>Layanan</div>
             </a>
         </li>
         <li class="menu-item {{ Request::is("dashboard/testimoni*") ? 'active' : '' }}">
@@ -39,7 +39,7 @@
         <li class="menu-item {{ Request::is("dashboard/galery*") ? 'active' : '' }}">
             <a href="{{ route('gallery.index') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-images"></i>
-                <div>Gallery</div>
+                <div>Galeri</div>
             </a>
         </li>
     </ul>
