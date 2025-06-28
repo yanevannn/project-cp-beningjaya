@@ -119,7 +119,7 @@
             </div>
             <div class="grid md:grid-cols-2 gap-12 items-center" data-aos="fade-up">
                 <div class="space-y-6">
-                    <h3 class="text-2xl font-bold text-gray-800">Cerita Kami</h3>
+                    <h3 class="text-2xl font-bold text-gray-800">Tentang Kami</h3>
                     <p class="text-gray-600">Didirikan pada tahun 2005, Bening Jaya telah berkembang menjadi salah satu
                         perusahaan pengeboran sumur terpercaya di Tabanan, Bali. Dengan tim profesional yang sangat
                         terampil dan peralatan pengeboran canggih, kami telah berhasil menyelesaikan lebih dari 1000
