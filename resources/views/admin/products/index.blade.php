@@ -15,7 +15,7 @@
                 </ul>
                 <div class="card mb-2">
                     <h5 class="card-header">Tabel Layanan</h5>
-                    <div class="table-responsive text-nowrap">
+                    <div class="table-responsive ">
                         <table class="table table-borderless" >
                             <thead>
                                 <tr>
@@ -40,8 +40,8 @@
                                             <img src="{{asset('storage/' . $item->photo)}}" alt="Gambar"
                                                 style="width: 100px; height: 100px;">
                                         </td>
-                                        <td class="w-100px">{{ $item->description }}</td>
-                                        <td>
+                                        <td>{{ $item->description }}</td>
+                                        <td class="d-flex justify-content-center align-items-center gap-1">
                                             <a href="{{ route('products.edit', $item->id) }}" class="btn btn-warning"><i
                                                     class="bx bx-edit"></i></a>
       

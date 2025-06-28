@@ -12,7 +12,7 @@
             </ul>
             <div class="card mb-2">
                 <h5 class="card-header">Tabel Testimoni</h5>
-                <div class="table-responsive text-nowrap">
+                <div class="table-responsive">
                     <table class="table table-borderless">
                         <thead>
                             <tr>
@@ -46,7 +46,7 @@
                                             <span class="badge bg-label-danger">Inactive</span>
                                         @endif
                                     </td>
-                                    <td class="text-center gap-2">
+                                    <td class="d-flex justify-content-center align-items-center gap-1">
                                         {{-- Tombol untuk mengedit testimoni --}}
                                         @if ($item->status == 'active')
                                             {{-- Tombol untuk mengubah status menjadi 'inactive' --}}
