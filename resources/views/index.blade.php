@@ -120,11 +120,11 @@
             <div class="grid md:grid-cols-2 gap-12 items-center" data-aos="fade-up">
                 <div class="space-y-6">
                     <h3 class="text-2xl font-bold text-gray-800">Tentang Kami</h3>
-                    <p class="text-gray-600">Didirikan pada tahun 2005, Bening Jaya telah berkembang menjadi salah satu
+                    <p class="text-gray-600 text-justify">Didirikan pada tahun 2005, Bening Jaya telah berkembang menjadi salah satu
                         perusahaan pengeboran sumur terpercaya di Tabanan, Bali. Dengan tim profesional yang sangat
                         terampil dan peralatan pengeboran canggih, kami telah berhasil menyelesaikan lebih dari 1000
                         proyek pengeboran di seluruh Bali.</p>
-                    <p class="text-gray-600">Misi kami adalah menyediakan solusi air yang andal dan berkelanjutan untuk
+                    <p class="text-gray-600 text-justify">Misi kami adalah menyediakan solusi air yang andal dan berkelanjutan untuk
                         rumah tangga, bisnis, dan operasional pertanian di seluruh Bali. Kami bangga dengan komitmen
                         kami terhadap kualitas, keselamatan, dan tanggung jawab terhadap lingkungan.</p>
                     <div class="grid grid-cols-2 gap-4">
@@ -182,7 +182,7 @@
                                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                                     class="fas fa-star"></i><i class="fas fa-star"></i>
                             </div>
-                            <p class="text-gray-700 mb-6 flex-grow text-sm">{{ $product->description }}</p>
+                            <p class="text-gray-700 mb-6 flex-grow text-sm text-justify">{{ $product->description }}</p>
                             <a href="https://wa.me/628990477851?text={{ urlencode('Halo Tim Bening Jaya, saya tertarik dengan produk "' . $product->name . '". Mohon informasinya lebih lanjut. Terima kasih!') }}"
                                 target="_blank"
                                 class="text-center bg-[#5cb85c] text-white font-semibold py-3 px-8 rounded-lg shadow-md hover:shadow-lg w-full transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:bg-[#4cae4c]">
@@ -275,7 +275,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <p class="italic text-gray-500">"{{ $review->review }}"</p>
+                                    <p class="italic text-gray-500 text-justify">"{{ $review->review }}"</p>
                                 </div>
                             </li>
                         @endforeach
@@ -412,7 +412,7 @@
                 class="flex flex-col md:flex-row justify-between items-start md:items-center space-y-6 md:space-y-0 md:space-x-8">
                 <div class="w-full md:w-1/3">
                     <img src="/assets/img/logo2.png" class="-ml-5" alt="" width="200">
-                    <p class="text-gray-400 text-balance">Layanan pengeboran sumur profesional di Tabanan, Bali sejak
+                    <p class="text-gray-400 text-balance text-justify">Layanan pengeboran sumur profesional di Tabanan, Bali sejak
                         tahun 2005. Menyediakan solusi air yang andal untuk properti hunian dan komersial.
                     </p>
                 </div>
