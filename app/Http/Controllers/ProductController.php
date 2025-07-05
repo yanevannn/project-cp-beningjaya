@@ -25,12 +25,23 @@ class ProductController extends Controller
             'name' => 'required|string|max:255|unique:products,name',
             'photo' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'description' => 'required|string|max:1000',
+        ],[
+            'name.required' => 'Nama layanan wajib diisi.',
+            'name.string' => 'Nama layanan harus berupa teks.',
+            'name.max' => 'Nama layanan tidak boleh lebih dari 255 karakter.',
+            'photo.required' => 'Foto layanan wajib diisi.',
+            'photo.image' => 'File harus berupa gambar.',
+            'photo.mimes' => 'Format gambar harus jpeg, png, jpg, gif, atau svg.',
+            'photo.max' => 'Ukuran gambar tidak boleh lebih dari 2MB.',
+            'description.required' => 'Deskripsi layanan wajib diisi.',
+            'description.string' => 'Deskripsi layanan harus berupa teks.',
+            'description.max' => 'Deskripsi layanan tidak boleh lebih dari 1000 karakter.',
         ]);
         if ($request->hasFile('photo')) {
             $photo = $request->file('photo');
             $photoPath = $photo->store('products', 'public');
         } else {
-            return redirect()->back()->withErrors(['photo' => 'Photo is required.']);
+            return redirect()->back()->withErrors(['photo' => 'Foto Wajib Diisi !.']);
         }
         $data = [
             'name' => $request->input('name'),
@@ -54,6 +65,16 @@ class ProductController extends Controller
             'name' => 'required|string|max:255|unique:products,name,' . $id,
             'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'description' => 'required|string|max:1000',
+        ],[
+            'name.required' => 'Nama layanan wajib diisi.',
+            'name.string' => 'Nama layanan harus berupa teks.',
+            'name.max' => 'Nama layanan tidak boleh lebih dari 255 karakter.',
+            'photo.image' => 'File harus berupa gambar.',
+            'photo.mimes' => 'Format gambar harus jpeg, png, jpg, gif, atau svg.',
+            'photo.max' => 'Ukuran gambar tidak boleh lebih dari 2MB.',
+            'description.required' => 'Deskripsi layanan wajib diisi.',
+            'description.string' => 'Deskripsi layanan harus berupa teks.',
+            'description.max' => 'Deskripsi layanan tidak boleh lebih dari 1000 karakter.',
         ]);
 
         $product = Product::findOrFail($id);

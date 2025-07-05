@@ -18,6 +18,7 @@
                             <tr>
                                 <th class="text-center">No</th>
                                 <th>Nama</th>
+                                <th>Foto</th>
                                 <th>Rating</th>
                                 <th>Pesan</th>
                                 <th>Status</th>
@@ -35,8 +36,15 @@
                                     <td class="text-center">{{ $loop->iteration }}</td>
                                     <td>{{ $item->name }}</td>
                                     <td>
-                                        <img src="{{ $item->photo ? asset('storage/' . $item->photo) : 'https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_640.png' }}" alt="Gambar"
-                                            style="width: 100px; height: 100px;">
+                                        <img src="{{ $item->photo ? asset('storage/' . $item->photo) : 'https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_640.png' }}"
+                                            alt="Gambar" style="width: 100px; height: 100px;">
+                                    </td>
+                                    <td class="d-flex">
+                                        {{-- Menggunakan loop untuk menampilkan bintang --}}
+                                        @for ($i = 1; $i <= 5; $i++)
+                                            <i
+                                                class="bx {{ $i <= $item->star ? 'bxs-star' : 'bx-star' }} text-warning"></i>
+                                        @endfor
                                     </td>
                                     <td>{{ $item->review }}</td>
                                     <td>
@@ -104,7 +112,8 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="confirmDeleteModalLabel-{{ $item->id }}">Konfirmasi Penghapusan Testimoni
+                        <h5 class="modal-title" id="confirmDeleteModalLabel-{{ $item->id }}">Konfirmasi Penghapusan
+                            Testimoni
                         </h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>

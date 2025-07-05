@@ -18,13 +18,18 @@ class GaleriController extends Controller
     {
         $request->validate([
             'photo' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ],[
+            'photo.required' => 'Foto wajib diisi',
+            'photo.image' => 'File harus berupa gambar',
+            'photo.mimes' => 'Format gambar harus jpeg, png, jpg, gif, atau svg',
+            'photo.max' => 'Ukuran gambar maksimal 2MB',
         ]);
 
         if ($request->hasFile('photo')) {
             $photo = $request->file('photo');
             $photoPath = $photo->store('gallery', 'public');
         } else {
-            return redirect()->back()->withErrors(['photo' => 'Photo is required.']);
+            return redirect()->back()->withErrors(['photo' => 'Foto Wajib Diisi !.']);
         }
 
         Gallery::create(['photo' => $photoPath]);

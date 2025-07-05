@@ -33,6 +33,7 @@ class HomeController extends Controller
             ],
             [
                 'name.required' => 'Nama wajib diisi.',
+                'name.string' => 'Nama harus berupa teks.',
                 'name.max' => 'Nama tidak boleh lebih dari 255 karakter.',
                 'photo.image' => 'Foto harus berupa file gambar.',
                 'photo.mimes' => 'Foto harus berformat jpeg, png, jpg, atau gif.',
@@ -41,6 +42,7 @@ class HomeController extends Controller
                 'rating.integer' => 'Rating harus berupa angka.',
                 'rating.between' => 'Rating harus antara 1 sampai 5.',
                 'review.required' => 'Ulasan wajib diisi.',
+                'review.string' => 'Ulasan harus berupa teks.',
                 'review.max' => 'Ulasan tidak boleh lebih dari 1000 karakter.',
             ]
         );
